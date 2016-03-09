@@ -1,5 +1,5 @@
 # mivico
-## Mi Vivienda Conectada. App Web para administrar conjuntos residenciales
+ Mi Vivienda Conectada. App Web para administrar conjuntos residenciales
 ## Notas
   - Proyecto realizado para la finalización de etapa lectiva del Sena.
   - Proyecto versión básica Finalizado.
