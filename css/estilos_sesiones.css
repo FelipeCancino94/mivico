@@ -1,0 +1,1805 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+}
+/*html{
+	height: 100%;
+}*/
+body{
+	height: 100%;
+	background: url(../img/fondo.jpg);
+	background-size: 30%;
+}
+@font-face{
+	font-family: shruti;
+	src: url(shruti.ttf);
+}
+@font-face{
+	font-family: impact;
+	src: url(Impact.ttf);
+}
+.contenedor{
+	width: 1024px;
+	margin: 0 auto;
+}
+.contenedor #logo{
+	width: 150px;
+	height: 169px;
+	background-size: 100%;
+	background: url(../img/logo_mivico.png); 
+	float: left;
+}
+.contenedor #menu_sesion #notificaciones{
+	background: url(../img/alarma.png);
+	width: 30px;
+	height: 30px;
+	background-size: 100%;
+	float: left;
+	margin: 0 0 0 80px;
+}
+.contenedor #barra_menu{
+	display: none;
+}
+.contenedor #menu_sesion{
+	width: 874px;
+	height: 30px;
+	background: rgba(0,147,178,1);
+	float: left;
+	margin: 95px 0 0 0;
+}
+.contenedor #menu_sesion ul.idiomas{
+	margin: 2px 0 0 113px;
+	float: left;
+}
+.contenedor #menu_sesion ul.idiomas li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu_sesion ul.idiomas li a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 14pt;
+	font-family: impact;
+}
+.contenedor #menu_sesion ul.idiomas li a:hover{
+	text-decoration: overline;
+	font-size: 14pt;
+}
+.contenedor #menu_sesion ul.idiomas li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.contenedor #menu_sesion ul.sesion{
+	margin: 2px 0 0 113px;
+	float: left;
+}
+.contenedor #menu_sesion ul.sesion li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu_sesion ul.sesion a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 14pt;
+	font-family: impact;
+}
+.contenedor #menu_sesion ul.sesion a:hover{
+	text-decoration: overline;
+	font-size: 14pt;
+}
+.contenedor #menu_sesion ul.sesion li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.contenedor .barra_azul{
+	background: rgba(0,147,178,1);
+	width: 1024px;
+	height: 14px;
+	float: right;
+	margin: 60px 0 0 0; 
+}
+.contenedor .opciones_sesion{
+	width: 1024px;
+	position: absolute;
+	margin: 20px 0 0 0;
+}
+.contenedor .opciones_sesion #solucion{
+	background: url(../img/solucion1.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+}
+.contenedor .opciones_sesion #solucion2{
+	background: url(../img/solucion2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 35px;
+}
+.contenedor .opciones_sesion #solucion3{
+	background: url(../img/solucion3.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 35px;
+}
+.contenedor .opciones_sesion #solucion4{
+	background: url(../img/solucion4.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 35px;
+}
+.contenedor .opciones_sesion #solucion5{
+	background: url(../img/solucion5.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 35px;
+}/*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.contenedor .opciones_sesion #solucion:hover{
+	background: url(../img/solucion1_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+}
+.contenedor .opciones_sesion #solucion2:hover{
+	background: url(../img/solucion2_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 35px;
+}
+.contenedor .opciones_sesion #solucion3:hover{
+	background: url(../img/solucion3_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 35px;
+}
+.contenedor .opciones_sesion #solucion4:hover{
+	background: url(../img/solucion4_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 35px;
+}
+.contenedor .opciones_sesion #solucion5:hover{
+	background: url(../img/solucion5_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 35px;
+}
+.separador {
+	clear: both;
+}
+.contenedor section article .cuadro_info{
+	width: 1024px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+}
+.contenedor section article .cuadro_info .img_perfil{
+	/*background: url(../img/img_muestra.jpg);*/
+	width: 241px;
+	height: 241px;
+	margin: 50px 0 0 168px;
+	float: left;
+}
+.contenedor section article .cuadro_info .info_usuario{
+	float: left;
+	margin: 80px 0 0 147px;
+}
+.contenedor section article .cuadro_info .info_usuario p{
+	text-align: justify;
+	margin: 20px 0 0 0;
+	font-family: impact;
+}
+.contenedor section article .cuadro_info a#actualizar{
+	text-decoration: none;
+	color: rgba(40,40,37,1);
+	background: rgba(168,198,69,1);
+	padding: 5px 20px;
+	border-radius: 15px;
+	margin: 0 0 0 555px;
+	font-family: impact;
+}
+.contenedor section article .cuadro_info .linea_cuadro_info{
+	background: rgba(1,0,2,0.5);
+	width: 839px;
+	height: 7px;
+	margin: 55px 0 0 90px;
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form{
+	width: 450px;
+	margin: 0;
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form p{
+	float: left;
+	margin: 30px 0 0 20px;
+	font-family: impact;
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form input{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 300px;
+	height: 30px;
+	background: rgba(43,40,49,1);
+	color: rgba(255,255,255,1);
+	border-color: transparent;
+	font-family: 'shruti';
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form input#foto{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 356px;
+	height: 30px;
+	background: none;
+	font-family: 'shruti';
+	color: rgba(40,40,37,1);
+
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form input#guardar_datos{
+	background: rgba(168,198,69,1);
+	width: 78px;
+	height: 25px;
+	border-radius: 15px;
+	margin: 20px 133px 0 0;
+	font-family: impact;
+	color: rgba(40,40,37,1);
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info{
+	width: 500px;
+	height: 210px;
+	display: none;
+}
+footer{
+	margin: 600px 0 0 0;
+}
+#fondo_footer{
+	background: rgba(43,40,49,1);
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	z-index: -1;
+}
+footer .contenedor ul.contactos_footer{
+	margin: 0 auto;
+	text-align: center;
+}
+footer .contenedor ul.contactos_footer li{
+	display: inline-block;
+	margin: 5px 15px 0 5px;
+}
+footer .contenedor ul.contactos_footer li a{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+}
+footer .contenedor ul.contactos_footer li a img{
+	margin: 0 10px 0 0;
+}
+footer .contenedor ul.contactos_footer li.slash1{
+	color: rgba(255,255,255,1);
+}
+footer .contenedor p{
+	color: rgba(255,255,255,1);
+	text-align: center;
+	margin: 8px 0 0 0;
+	font-family: 'shruti';
+}
+/*responsive info 320px!!!!!!!!!!!!!!!!!*/
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! resposive design seccion info 768px!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+.contenedor{
+	width: 768px;
+	margin: 0 auto;
+}
+.contenedor #logo{
+	width: 115px;
+	height: 130px;
+	background-size: 100%;
+	background: url(../img/logo_mivico_2.png); 
+	float: left;
+}
+
+.contenedor #barra_menu{
+	display: none;
+}
+.contenedor #menu_sesion{
+	width: 653px;
+	height: 30px;
+	background: rgba(0,147,178,1);
+	float: left;
+	margin: 95px 0 0 0;
+}
+.contenedor #menu_sesion ul.idiomas{
+	margin: 2px 0 0 113px;
+	float: left;
+}
+.contenedor #menu_sesion ul.idiomas li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu_sesion ul.idiomas li a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 14pt;
+	font-family: impact;
+}
+.contenedor #menu_sesion ul.idiomas li a:hover{
+	text-decoration: overline;
+	font-size: 14pt;
+}
+.contenedor #menu_sesion ul.idiomas li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.contenedor #menu_sesion ul.sesion{
+	margin: 2px 0 0 113px;
+	float: left;
+}
+.contenedor #menu_sesion ul.sesion li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu_sesion ul.sesion a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 14pt;
+	font-family: impact;
+}
+.contenedor #menu_sesion ul.sesion a:hover{
+	text-decoration: overline;
+	font-size: 14pt;
+}
+.contenedor #menu_sesion ul.sesion li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.contenedor .barra_azul{
+	background: rgba(0,147,178,1);
+	width: 768px;
+	height: 14px;
+	float: right;
+	margin: 60px 0 0 0; 
+}
+.contenedor .opciones_sesion{
+	width: 768px;
+	position: absolute;
+	margin: 20px 0 0 0;
+}
+.contenedor .opciones_sesion #solucion{
+	background: url(../img/solucion1.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+        margin:0 0 0 -24px;
+}
+.contenedor .opciones_sesion #solucion2{
+	background: url(../img/solucion2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 -24px;
+}
+.contenedor .opciones_sesion #solucion3{
+	background: url(../img/solucion3.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 -24px;
+}
+.contenedor .opciones_sesion #solucion4{
+	background: url(../img/solucion4.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 -24px;
+}
+.contenedor .opciones_sesion #solucion5{
+	background: url(../img/solucion5.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 -24px;
+}/*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.contenedor .opciones_sesion #solucion:hover{
+	background: url(../img/solucion1_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+        margin:0 0 0 -24px;
+}
+.contenedor .opciones_sesion #solucion2:hover{
+	background: url(../img/solucion2_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 -24px;
+}
+.contenedor .opciones_sesion #solucion3:hover{
+	background: url(../img/solucion3_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 -24px;
+}
+.contenedor .opciones_sesion #solucion4:hover{
+	background: url(../img/solucion4_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 -24px;
+}
+.contenedor .opciones_sesion #solucion5:hover{
+	background: url(../img/solucion5_2.png);
+	width: 176px;
+	height: 40px;
+	float: left;
+	margin: 0 0 0 -24px;
+}
+.separador {
+	clear: both;
+}
+.contenedor section article .cuadro_info{
+	width: 768px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+}
+.contenedor section article .cuadro_info .img_perfil{
+	/*background: url(../img/img_muestra.jpg);*/
+	width: 241px;
+	height: 241px;
+	margin: 50px 0 0 100px;
+	float: left;
+}
+.contenedor section article .cuadro_info .info_usuario{
+	float: left;
+	margin: 80px 0 0 100px;
+}
+.contenedor section article .cuadro_info .info_usuario p{
+	text-align: justify;
+	margin: 20px 0 0 0;
+	font-family: impact;
+}
+.contenedor section article .cuadro_info a#actualizar{
+	text-decoration: none;
+	color: rgba(40,40,37,1);
+	background: rgba(168,198,69,1);
+	padding: 5px 20px;
+	border-radius: 15px;
+	margin: 0 0 0 450px;
+	font-family: impact;
+}
+.contenedor section article .cuadro_info .linea_cuadro_info{
+	background: rgba(1,0,2,0.5);
+	width: 768px;
+	height: 7px;
+	margin: 55px 0 0 0;
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form{
+	width: 450px;
+	margin: 0;
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form p{
+	float: left;
+	margin: 30px 0 0 20px;
+	font-family: impact;
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form input{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 300px;
+	height: 30px;
+	background: rgba(43,40,49,1);
+	color: rgba(255,255,255,1);
+	border-color: transparent;
+	font-family: 'shruti';
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form input#foto{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 356px;
+	height: 30px;
+	background: none;
+	font-family: 'shruti';
+	color: rgba(40,40,37,1);
+
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info form input#guardar_datos{
+	background: rgba(168,198,69,1);
+	width: 78px;
+	height: 25px;
+	border-radius: 15px;
+	margin: 20px 133px 0 0;
+	font-family: impact;
+	color: rgba(40,40,37,1);
+}
+.contenedor section article .cuadro_info .formulario_actualizar_info{
+	width: 500px;
+	height: 210px;
+	display: none;
+}
+footer{
+	margin: 600px 0 0 0;
+}
+#fondo_footer{
+	background: rgba(43,40,49,1);
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	z-index: -1;
+}
+footer .contenedor ul.contactos_footer{
+	margin: 0 auto;
+	text-align: center;
+}
+footer .contenedor ul.contactos_footer li{
+	display: inline-block;
+	margin: 5px 15px 0 5px;
+}
+footer .contenedor ul.contactos_footer li a{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+}
+footer .contenedor ul.contactos_footer li a img{
+	margin: 0 10px 0 0;
+}
+footer .contenedor ul.contactos_footer li.slash1{
+	color: rgba(255,255,255,1);
+}
+footer .contenedor p{
+	color: rgba(255,255,255,1);
+	text-align: center;
+	margin: 8px 0 0 0;
+	font-family: 'shruti';
+}
+}
+/*///////////////////////////////////////////////solucion//////////////////////////////////////////////////////////////////////////////////*/
+.contenedor .opciones_sesion .contenido_solucion{
+	width: 1024px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion{
+	width: 1022px;
+	height: 33px;
+	margin: 0 0 10px 0;
+	background: linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -moz-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -o-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion .estado_peticion{
+	width: 23px;
+	height: 23px;
+	background: rgba(0,0,0,1);
+	float: left;
+	margin: 5px 0 0 30px;
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion .linea_vertical{
+	background: rgba(0,0,0,0.4);
+	width: 1px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 35px;
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion p#de , .contenedor .opciones_sesion .contenido_solucion .peticion p#item ,.contenedor .opciones_sesion .contenido_solucion .peticion p#vivienda{
+	width: 200px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion p#fecha_recibido{
+	width: 110px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion .linea_separacion{
+	background: rgba(0,0,0,0.4);
+	width: 395px;
+	height: 1px;
+	margin: 50px 0 0 304px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_recibido{
+	width: 671px;
+	height: 30px;
+	margin: 13px 0 0 146px;
+	background: rgba(40,40,37,1);
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+	border:3px solid rgba(255,255,255,1);
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form p{
+	float: left;
+	font-family: impact;
+	margin: 30px 10px 0 300px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#asunto, .contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#apartamento, .contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#bloque {
+	font-family: 'shruti';
+	margin: 20px 300px 0 0;
+	width: 300px;
+	float: right;
+	height: 30px;
+	background: rgba(0,147,178,1);
+	color: rgba(255,255,255,1);
+	border-color: transparent;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#mensaje_respuesta{
+	width: 400px;
+	height: 100px;
+	margin: 18px 0 0 305px;
+	background: rgba(200,200,200,1);
+	font-family: 'shruti';
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form textarea{
+	width: 420px;
+	height: 100px;
+	margin: 18px 0 0 300px;
+	background: rgba(200,200,200,1);
+	font-family: 'shruti';
+	resize: none;
+	border-color: rgba(0,147,178,1);
+	border-width: 3px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#boton_enviar{
+	width: 100px;
+	height: 25px;
+	border-radius: 15px;
+	background: rgba(168,198,69,1);
+	border-color: transparent;
+	margin: 30px 0 0 453px; 
+	font-family: impact;
+	color: rgba(40,40,37,1);
+}
+.contenedor .opciones_sesion .contenido_solucion table#propi_queja{
+	border: 3px;
+	border-color: rgba(0,147,178,1);
+	width: 1000px;
+}
+.contenedor .opciones_sesion .contenido_solucion table#propi_queja tr td{
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion table#propi_queja tr td.tit_que{
+	font-family: impact;
+	background: rgba(168,198,69,1);
+}
+.contenedor .opciones_sesion .contenido_solucion .franja_solucion{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 18px 0 0 90px;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!responsive solucion 1, admin, 768px!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+.contenedor .opciones_sesion .contenido_solucion{
+	width: 768px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion{
+	width: 768px;
+	height: 33px;
+	margin: 0 0 10px 0;
+	background: linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -moz-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -o-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion .estado_peticion{
+	width: 23px;
+	height: 23px;
+	background: rgba(0,0,0,1);
+	float: left;
+	margin: 5px 0 0 30px;
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion .linea_vertical{
+	background: rgba(0,0,0,0.4);
+	width: 1px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 35px;
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion p#de , .contenedor .opciones_sesion .contenido_solucion .peticion p#item ,.contenedor .opciones_sesion .contenido_solucion .peticion p#vivienda{
+	width: 200px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion .peticion p#fecha_recibido{
+	width: 110px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion .linea_separacion{
+	background: rgba(0,0,0,0.4);
+	width: 395px;
+	height: 1px;
+	margin: 50px 0 0 304px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_recibido{
+	width: 671px;
+	height: 30px;
+	margin: 13px 0 0 0;
+	background: rgba(40,40,37,1);
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+	border:3px solid rgba(255,255,255,1);
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form{
+        margin: 0 0 0 100px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form p{
+	float: left;
+	font-family: impact;
+	margin: 30px 0 0 80px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#asunto, .contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#apartamento, .contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#bloque {
+	font-family: 'shruti';
+	margin: 20px 170px 0 0;
+	width: 250px;
+	float: right;
+	height: 30px;
+	background: rgba(0,147,178,1);
+	color: rgba(255,255,255,1);
+	border-color: transparent;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#mensaje_respuesta{
+	width: 400px;
+	height: 100px;
+	margin: 18px 0 0 100px;
+	background: rgba(200,200,200,1);
+	font-family: 'shruti';
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form textarea{
+	width: 420px;
+	height: 100px;
+	margin: 18px 0 0 80px;
+	background: rgba(200,200,200,1);
+	font-family: 'shruti';
+	resize: none;
+	border-color: rgba(0,147,178,1);
+	border-width: 3px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_solucion form input#boton_enviar{
+	width: 100px;
+	height: 25px;
+	border-radius: 15px;
+	background: rgba(168,198,69,1);
+	border-color: transparent;
+	margin: 30px 0 0 400px; 
+	font-family: impact;
+	color: rgba(40,40,37,1);
+}
+.contenedor .opciones_sesion .contenido_solucion table#propi_queja{
+	border: 3px;
+	border-color: rgba(0,147,178,1);
+	width: 768px;
+}
+.contenedor .opciones_sesion .contenido_solucion table#propi_queja tr td{
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion table#propi_queja tr td.tit_que{
+	font-family: impact;
+	background: rgba(168,198,69,1);
+}
+.contenedor .opciones_sesion .contenido_solucion .franja_solucion{
+	background: rgba(0,0,0,0.4);
+	width: 768px;
+	height: 8px;
+	margin: 18px 0 0 90px;
+
+}
+}
+/*/////////////////////////////////////contratos////////////////////////////////////////////////////////////////////////////////////////////*/
+.contenedor .opciones_sesion .contenido_solucion2{
+	width: 1024px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .contratos{
+	width: 1022px;
+	height: 33px;
+	margin: 0 0 10px 0;
+	background: rgba(200,200,200,1);
+}
+.contenedor .opciones_sesion .contenido_solucion2 .contratos .linea_vertical{
+	background: rgba(0,0,0,0.4);
+	width: 1px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 30px;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .contratos p#empresa_nombre , .contenedor .opciones_sesion .contenido_solucion2 .contratos p#empresa_id{
+	width: 200px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: 'shruti';
+}
+.contenedor .opciones_sesion .contenido_solucion2 .contratos p#fecha_inicio , .contenedor .opciones_sesion .contenido_solucion2 .contratos p#fecha_fin{
+	width: 110px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+/*----------------------------------------------------------*/
+.contenedor .opciones_sesion .contenido_solucion2 .contratos a {
+	text-decoration: none;
+	margin: 0 0 0 10px;
+	color: rgba(33,25,21,1);
+	float: left;
+	font-family: impact;
+}
+
+
+.contenedor .opciones_sesion .contenido_solucion2 .mensaje_recibido{
+	border: 1px solid;
+	width: 671px;
+	height: 94px;
+	margin: 13px 0 0 146px;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .mensaje_solucion form input#mensaje_respuesta{
+	width: 400px;
+	height: 100px;
+	margin: 18px 0 0 305px;
+	background: rgba(200,200,200,1);
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .mensaje_solucion form input#boton_enviar{
+	width: 100px;
+	height: 25px;
+	border-radius: 15px;
+	background: rgba(168,198,69,1);
+	margin: 30px 0 0 453px; 
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .franja_solucion{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 18px 0 0 90px;
+}
+.contenedor .opciones_sesion .contenido_solucion2 #bot_edi_cont {
+	width: 100%;
+	height: 20px;
+	background: rgba(168,198,69,1);
+	margin: 20px 0 0 0;
+	border-radius: 5px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion2 #boton_registrar{
+	width: 100%;
+	height: 20px;
+	border-radius: 5px;
+	background: rgba(168,198,69,1);
+	margin: 50px 0 0 0; 
+	font-family: impact;
+}
+.contenedor .contenido_solucion2 .formulario_contrato{
+	width: 770px;
+	height: 300px;
+	position: absolute;
+	margin: 0;
+	display: none;
+}
+.contenedor .contenido_solucion2 .formulario_edicion{
+	display: none;	
+}
+.contenedor .contenido_solucion2 .formulario_edicion form{
+	width: 570px;
+	height: 100%;
+}
+
+.contenedor .contenido_solucion2 .formulario_contrato form p , .contenedor .contenido_solucion2 .formulario_edicion form p{
+	float: left;
+	margin: 30px 0 0 0;
+	font-family: impact;
+}
+.contenedor .contenido_solucion2 .formulario_contrato form input , .contenedor .contenido_solucion2 .formulario_edicion form input{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 356px;
+	height: 30px;
+	background: rgba(43,40,49,1);
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+}
+.contenedor .contenido_solucion2 .formulario_contrato form input#guardar_contrato , .contenedor .contenido_solucion2 .formulario_edicion form input#guardar_contrato{
+	background: rgba(168,198,69,1);
+	width: 78px;
+	height: 25px;
+	border-radius: 15px;
+	margin: 20px 250px 0 0;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .franja_solucion2{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 420px 0 0 90px;
+}
+/*!!!!!!!!!!!!!!!!responsive contratos 768px!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.contenedor .opciones_sesion .contenido_solucion2{
+	width: 768px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .contratos{
+	width:768px;
+	height: 33px;
+	margin: 0 0 10px 0;
+	background: rgba(200,200,200,1);
+}
+.contenedor .opciones_sesion .contenido_solucion2 .contratos .linea_vertical{
+	background: rgba(0,0,0,0.4);
+	width: 1px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 10px;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .contratos p#empresa_nombre , .contenedor .opciones_sesion .contenido_solucion2 .contratos p#empresa_id{
+	width: 200px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: 'shruti';
+}
+.contenedor .opciones_sesion .contenido_solucion2 .contratos p#fecha_inicio , .contenedor .opciones_sesion .contenido_solucion2 .contratos p#fecha_fin{
+	width: 110px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+/*----------------------------------------------------------*/
+.contenedor .opciones_sesion .contenido_solucion2 .contratos a {
+	text-decoration: none;
+	margin: 0 0 0 10px;
+	color: rgba(33,25,21,1);
+	float: left;
+	font-family: impact;
+}
+
+
+.contenedor .opciones_sesion .contenido_solucion2 .mensaje_recibido{
+	border: 1px solid;
+	width: 671px;
+	height: 94px;
+	margin: 13px 0 0 146px;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .mensaje_solucion form input#mensaje_respuesta{
+	width: 400px;
+	height: 100px;
+	margin: 18px 0 0 305px;
+	background: rgba(200,200,200,1);
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .mensaje_solucion form input#boton_enviar{
+	width: 100px;
+	height: 25px;
+	border-radius: 15px;
+	background: rgba(168,198,69,1);
+	margin: 30px 0 0 453px; 
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .franja_solucion{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 18px 0 0 90px;
+}
+.contenedor .opciones_sesion .contenido_solucion2 #bot_edi_cont {
+	width: 100%;
+	height: 20px;
+	background: rgba(168,198,69,1);
+	margin: 20px 0 0 0;
+	border-radius: 5px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion2 #boton_registrar{
+	width: 100%;
+	height: 20px;
+	border-radius: 5px;
+	background: rgba(168,198,69,1);
+	margin: 50px 0 0 0; 
+	font-family: impact;
+}
+.contenedor .contenido_solucion2 .formulario_contrato{
+	width: 770px;
+	height: 300px;
+	position: absolute;
+	margin: 0;
+	display: none;
+}
+.contenedor .contenido_solucion2 .formulario_edicion{
+	display: none;	
+}
+.contenedor .contenido_solucion2 .formulario_edicion form{
+	width: 570px;
+	height: 100%;
+}
+
+.contenedor .contenido_solucion2 .formulario_contrato form p , .contenedor .contenido_solucion2 .formulario_edicion form p{
+	float: left;
+	margin: 30px 0 0 0;
+	font-family: impact;
+}
+.contenedor .contenido_solucion2 .formulario_contrato form input , .contenedor .contenido_solucion2 .formulario_edicion form input{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 356px;
+	height: 30px;
+	background: rgba(43,40,49,1);
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+}
+.contenedor .contenido_solucion2 .formulario_contrato form input#guardar_contrato , .contenedor .contenido_solucion2 .formulario_edicion form input#guardar_contrato{
+	background: rgba(168,198,69,1);
+	width: 78px;
+	height: 25px;
+	border-radius: 15px;
+	margin: 20px 250px 0 0;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion2 .franja_solucion2{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 420px 0 0 90px;
+}
+}
+/*////////////////////////////////////////////////////////////cuentas//////////////////////////////////////////////////////////////////////*/
+.contenedor .opciones_sesion .contenido_solucion3{
+	width: 1024px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas{
+	width: 1022px;
+	height: 33px;
+	margin: 0 0 10px 0;
+	background: rgba(200,200,200,1);
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas .linea_vertical{
+	background: rgba(0,0,0,0.4);
+	width: 1px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 35px;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas p#nombre_habitante , .contenedor .opciones_sesion .contenido_solucion3 .cuentas p#bloque_habitante{
+	width: 200px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas p#apartamento_habitante , .contenedor .opciones_sesion .contenido_solucion3 .cuentas p#estado_habitante{
+	width: 110px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas a {
+	text-decoration: none;
+	margin: 0 0 0 20px;
+	color: rgba(33,25,21,1);
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .franja_solucion{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 18px 0 0 90px;
+}
+.contenedor .opciones_sesion .contenido_solucion3 #boton_registrar{
+	width: 100%;
+	height: 20px;
+	border-radius: 5px;
+	background: rgba(168,198,69,1);
+	margin: 50px 0 0 0; 
+	font-family: impact; 
+}
+.contenedor .contenido_solucion3 .formulario_cuentas{
+	width: 700px;
+	height: 300px;
+	position: absolute;
+	margin: 250px 0 0 0;
+	display: none;
+}
+.contenedor .contenido_solucion3 .formulario_cuentas form p{
+	float: left;
+	margin: 30px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .contenido_solucion3 .formulario_cuentas form input{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 356px;
+	height: 30px;
+	background: rgba(43,40,49,1);
+	color: rgba(255,255,255,1);
+	font-family: impact;
+}
+.contenedor .contenido_solucion3 .formulario_cuentas form input#guardar_cuenta{
+	background: rgba(168,198,69,1);
+	width: 78px;
+	height: 25px;
+	border-radius: 15px;
+	margin: 20px 133px 0 0;
+	font-family: impact;
+}
+.contenedor .contenido_solucion3 .formulario_edicion{
+	display: none;	
+}
+.contenedor .contenido_solucion3 .formulario_edicion form{
+	width: 570px;
+	height: 100%;
+}
+
+ .contenedor .contenido_solucion3 .formulario_edicion form p{
+	float: left;
+	margin: 30px 0 0 0;
+	font-family: impact;
+}
+ .contenedor .contenido_solucion3 .formulario_edicion form input{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 356px;
+	height: 30px;
+	background: rgba(43,40,49,1);
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+}
+ .contenedor .contenido_solucion3 .formulario_edicion form input#guardar_contrato{
+	background: rgba(168,198,69,1);
+	width: 78px;
+	height: 25px;
+	border-radius: 15px;
+	margin: 20px 250px 0 0;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 #bot_edi_cuentas {
+	width: 100%;
+	height: 20px;
+	background: rgba(168,198,69,1);
+	margin: 20px 0 0 0;
+	border-radius: 5px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .franja_solucion2{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 420px 0 0 90px;
+}
+/*!!!!!!!!!!!responsive cuentas 768px!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.contenedor .opciones_sesion .contenido_solucion3{
+	width: 768px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas{
+	width: 768px;
+	height: 33px;
+	margin: 0 0 10px 0;
+	background: rgba(200,200,200,1);
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas .linea_vertical{
+	background: rgba(0,0,0,0.4);
+	width: 1px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 35px;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas p#nombre_habitante , .contenedor .opciones_sesion .contenido_solucion3 .cuentas p#bloque_habitante{
+	width: 200px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas p#apartamento_habitante , .contenedor .opciones_sesion .contenido_solucion3 .cuentas p#estado_habitante{
+	width: 110px;
+	height: 23px;
+	float: left;
+	margin: 5px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas a {
+	text-decoration: none;
+	margin: 0 0 0 20px;
+	color: rgba(33,25,21,1);
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .franja_solucion{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 18px 0 0 90px;
+}
+.contenedor .opciones_sesion .contenido_solucion3 #boton_registrar{
+	width: 100%;
+	height: 20px;
+	border-radius: 5px;
+	background: rgba(168,198,69,1);
+	margin: 50px 0 0 0; 
+	font-family: impact; 
+}
+.contenedor .contenido_solucion3 .formulario_cuentas{
+	width: 700px;
+	height: 300px;
+	position: absolute;
+	margin: 250px 0 0 0;
+	display: none;
+}
+.contenedor .contenido_solucion3 .formulario_cuentas form p{
+	float: left;
+	margin: 30px 0 0 20px;
+	font-family: impact;
+}
+.contenedor .contenido_solucion3 .formulario_cuentas form input{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 356px;
+	height: 30px;
+	background: rgba(43,40,49,1);
+	color: rgba(255,255,255,1);
+	font-family: impact;
+}
+.contenedor .contenido_solucion3 .formulario_cuentas form input#guardar_cuenta{
+	background: rgba(168,198,69,1);
+	width: 78px;
+	height: 25px;
+	border-radius: 15px;
+	margin: 20px 133px 0 0;
+	font-family: impact;
+}
+.contenedor .contenido_solucion3 .formulario_edicion{
+	display: none;	
+}
+.contenedor .contenido_solucion3 .formulario_edicion form{
+	width: 570px;
+	height: 100%;
+}
+
+ .contenedor .contenido_solucion3 .formulario_edicion form p{
+	float: left;
+	margin: 30px 0 0 0;
+	font-family: impact;
+}
+ .contenedor .contenido_solucion3 .formulario_edicion form input{
+	float: right;
+	margin: 20px 20px 0 0;
+	width: 356px;
+	height: 30px;
+	background: rgba(43,40,49,1);
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+}
+ .contenedor .contenido_solucion3 .formulario_edicion form input#guardar_contrato{
+	background: rgba(168,198,69,1);
+	width: 78px;
+	height: 25px;
+	border-radius: 15px;
+	margin: 20px 250px 0 0;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 #bot_edi_cuentas {
+	width: 100%;
+	height: 20px;
+	background: rgba(168,198,69,1);
+	margin: 20px 0 0 0;
+	border-radius: 5px;
+	font-family: impact;
+}
+.contenedor .opciones_sesion .contenido_solucion3 .franja_solucion2{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 420px 0 0 90px;
+}
+}
+/*/////////////////////////////////////////////////////////////////////////difusion///////////////////////////////////////////////////////*/
+.contenedor .opciones_sesion .contenido_solucion4{
+	width: 1024px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion{
+	width: 1022px;
+	height: 106px;
+	background: rgba(200,200,200,1);
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi{
+	width: 1022px;
+	height: 106px;
+	margin: 20px 0 0 150px;
+}
+
+.contenedor .opciones_sesion .contenido_solucion4 .difusion .img_perfil_usuario, .contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi .img_perfil_usuario{
+	width: 45px;
+	height: 45px;
+	background-size: 100%;
+	float: left;
+	/*margin: 35px 0 0 0;*/
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion textarea, .contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi textarea{
+	width: 700px;
+	height: 35px;
+	background: rgba(61,61,63,1);
+	border-radius: 10px;
+	margin: 0 0 0 35px;
+	float: left;
+	font-family: 'shruti';
+	resize:none;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion p, .contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi p{
+	font-family: 'impact';
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion input#boton_publicar, .contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi input#boton_publicar{
+	margin: 10px 0 0 720px;
+	padding: 5px;
+	border-radius: 15px;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores{
+	width: 1022px;
+	height: 100px;
+	background: rgba(200,200,200,1);	
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores #cuadro_publicacion_anterior .img_perfil_usuario{
+	width: 65px;
+	height: 65px;
+	background-size: 100%;
+	margin: 10px 20px 50px 50px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores #cuadro_publicacion_anterior{
+	width: 700px;
+	height: 80px;
+	/*background: rgba(255,255,255,1);*/
+	margin: 20px 20px 0 50px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores #cuadro_publicacion_anterior p#textos_previos{
+	font-family: 'shruti';
+	margin: 20px 0 0 60px;
+	float: left;
+	font-size: 14pt;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores #cuadro_publicacion_anterior p#p_usuario{
+	font-family: 'impact';
+	margin: 0 0 0 8px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion4 a{
+	text-decoration: none;
+	font-family: impact;
+	color: rgba(168,198,69,1);
+	float: right;
+	margin: 170px 70px 0 0;
+	font-family: impact;
+}
+/*!!!!!!!!!!!!responsive difusion 768px!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.contenedor .opciones_sesion .contenido_solucion4{
+	width: 768px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion{
+	width: 768px;
+	height: 106px;
+	background: rgba(200,200,200,1);
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi{
+	width: 768px;
+	height: 106px;
+	margin: 20px 0 0 150px;
+}
+
+.contenedor .opciones_sesion .contenido_solucion4 .difusion .img_perfil_usuario, .contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi .img_perfil_usuario{
+	width: 45px;
+	height: 45px;
+	background-size: 100%;
+	float: left;
+	/*margin: 35px 0 0 0;*/
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion textarea, .contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi textarea{
+	width: 400px;
+	height: 35px;
+	background: rgba(61,61,63,1);
+	border-radius: 10px;
+	margin: 0 0 0 35px;
+	float: left;
+	font-family: 'shruti';
+	resize:none;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion p, .contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi p{
+	font-family: 'impact';
+}
+.contenedor .opciones_sesion .contenido_solucion4 .difusion input#boton_publicar, .contenedor .opciones_sesion .contenido_solucion4 .difusion_sesion_propi input#boton_publicar{
+	margin: 10px 0 0 400px;
+	padding: 5px;
+	border-radius: 15px;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores{
+	width: 768px;
+	height: 100px;
+	background: rgba(200,200,200,1);	
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores #cuadro_publicacion_anterior .img_perfil_usuario{
+	width: 65px;
+	height: 65px;
+	background-size: 100%;
+	margin: 10px 20px 50px 50px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores #cuadro_publicacion_anterior{
+	width: 700px;
+	height: 80px;
+	/*background: rgba(255,255,255,1);*/
+	margin: 20px 20px 0 50px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores #cuadro_publicacion_anterior p#textos_previos{
+	font-family: 'shruti';
+	margin: 20px 0 0 60px;
+	float: left;
+	font-size: 14pt;
+}
+.contenedor .opciones_sesion .contenido_solucion4 .publicaciones_anteriores #cuadro_publicacion_anterior p#p_usuario{
+	font-family: 'impact';
+	margin: 0 0 0 8px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion4 a{
+	text-decoration: none;
+	font-family: impact;
+	color: rgba(168,198,69,1);
+	float: right;
+	margin: 170px 70px 0 0;
+	font-family: impact;
+}
+}
+/*/////////////////////////////////////////////////////////////////////////aprobaciones///////////////////////////////////////////////////////*/
+.contenedor .opciones_sesion .contenido_solucion5{
+	width: 1024px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud{
+	width: 1022px;
+	height: 106px;
+	background: rgba(200,200,200,1);
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud .img_perfil_usuario{
+/*	background: url(../img/img_muestra.jpg);
+*/	width: 45px;
+	height: 45px;
+	background-size: 100%;
+	float: left;
+	margin: 35px 0 0 112px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud .img_perfil_usuario p#p_usuario{
+	font-family: 'impact';
+	margin: 0 0 0 8px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud  p#p_peticion{
+	font-family: 'shruti';
+	margin: 30px 0 0 20px;
+	float: left;
+	width: 300px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud  p#p_radicado{
+	font-family: 'shruti';
+	margin: 30px 0 0 100px;
+	float: left;
+	width: 10px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud  p{
+	font-family: 'impact';
+	margin:30px 0 0 20px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud textarea{
+	width: 719px;
+	height: 35px;
+	background: rgba(61,61,63,1);
+	border-radius: 20px;
+	margin: 40px 0 0 35px;
+	float: left;
+	resize:none;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud{
+	width: 1022px;
+	height: 170px;
+	background: rgba(200,200,200,1);
+	margin: 40px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud .img_perfil_usuario{
+	background: url(../img/img_muestra.jpg);
+	width: 65px;
+	height: 65px;
+	background-size: 100%;
+	float: left;
+	margin: 60px 0 0 100px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud textarea{
+	width: 719px;
+	height: 100px;
+	background: rgba(61,61,63,1);
+	margin: 40px 0 0 0;
+	float: left;
+	color: rgba(255,255,255,1);
+	resize:none;
+}
+.contenedor .opciones_sesion .contenido_solucion5 #boton_enviar_aprobacion{
+	width: 100px;
+	height: 20px;
+	background: rgba(168,198,69,1);
+	margin: 30px 0 0 300px; 
+}
+.contenedor .opciones_sesion .contenido_solucion5 .franja_solucion5{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 180px 0 0 90px;
+}
+/*//////////////////////////////////////////////////////////////sesion junta ---- aprobaciones////////////////////////////////*/
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud .decision{
+	margin: 0 0 0 650px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud .decision p{
+	float: left;
+	margin: 0 0 0 20px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud .decision input{
+	float: left;
+	margin: 5px 0 0 20px;
+}
+/*!!!!!!!!!!!!!responsive aprobaciones 768px!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	.contenedor .opciones_sesion .contenido_solucion5{
+	width: 768px;
+	height: 600px;
+	background: rgba(200,200,200,1);
+	box-shadow: rgba(100,100,100,0.5) 10px 10px 20px;
+	position: absolute;
+	display: none;
+	margin: 54px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud{
+	width: 768px;
+	height: 106px;
+	background: rgba(200,200,200,1);
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud .img_perfil_usuario{
+/*	background: url(../img/img_muestra.jpg);
+*/	width: 45px;
+	height: 45px;
+	background-size: 100%;
+	float: left;
+	margin: 35px 0 0 10px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud .img_perfil_usuario p#p_usuario{
+	font-family: 'impact';
+	margin: 0 0 0 8px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud  p#p_peticion, .contenedor .opciones_sesion .contenido_solucion5 .solicitud  p#p_respuesta {
+	font-family: 'shruti';
+	margin: 30px 0 0 20px;
+	float: left;
+	width: 250px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud  p#p_radicado{
+	font-family: 'shruti';
+	margin: 30px 0 0 50px;
+	float: left;
+	width: 10px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud  p{
+	font-family: 'impact';
+	margin:30px 0 0 20px;
+	float: left;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .solicitud textarea{
+	width: 400px;
+	height: 35px;
+	background: rgba(61,61,63,1);
+	border-radius: 20px;
+	margin: 40px 0 0 35px;
+	float: left;
+	resize:none;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud{
+	width: 768px;
+	height: 170px;
+	background: rgba(200,200,200,1);
+	margin: 40px 0 0 0;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud .img_perfil_usuario{
+	background: url(../img/img_muestra.jpg);
+	width: 65px;
+	height: 65px;
+	background-size: 100%;
+	float: left;
+	margin: 60px 0 0 10px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud textarea{
+	width: 400px;
+	height: 100px;
+	background: rgba(61,61,63,1);
+	margin: 40px 0 0 0;
+	float: left;
+	color: rgba(255,255,255,1);
+	resize:none;
+}
+.contenedor .opciones_sesion .contenido_solucion5 #boton_enviar_aprobacion{
+	width: 100px;
+	height: 20px;
+	background: rgba(168,198,69,1);
+	margin: 30px 0 0 300px; 
+}
+.contenedor .opciones_sesion .contenido_solucion5 .franja_solucion5{
+	background: rgba(0,0,0,0.4);
+	width: 838px;
+	height: 8px;
+	margin: 180px 0 0 90px;
+display:none;
+}
+/*//////////////////////////////////////////////////////////////sesion junta ---- aprobaciones////////////////////////////////*/
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud .decision{
+	margin: 0 0 0 650px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud .decision p{
+	float: left;
+	margin: 0 0 0 20px;
+}
+.contenedor .opciones_sesion .contenido_solucion5 .ingreso_solicitud .decision input{
+	float: left;
+	margin: 5px 0 0 20px;
+}
+}
+/*//////////////////////////////////////////////////////////////sesion propietario ---- solucion////////////////////////////////*/
+.contenedor .opciones_sesion .contenido_solucion .mensaje_propietario form p{
+	font-family: impact;
+	float: left;
+	margin:10px 0 20px 305px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_propietario form input , .contenedor .opciones_sesion .contenido_solucion .mensaje_propietario form select{
+	font-family: impact;
+	float: right;
+	width: 180px;
+	margin:10px 325px 20px 0;
+	background: rgba(61,61,63,1);
+	color: rgba(255,255,255,1);
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_propietario textarea{
+	color: rgba(255,255,255,1);
+	width: 1000px;
+	height: 150px;
+	margin: 0 0 0 12px;
+	background: rgba(61,61,63,1);
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_propietario form input#boton_enviar_propietario{
+	width: 100px;
+	height: 25px;
+	border-radius: 15px;
+	background: rgba(168,198,69,1);
+	margin: 30px 0 0 420px; 
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas_propietario {
+	width: 1022px;
+	height: 100px;
+	margin: 200px 0 10px 0;
+	background: linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -moz-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -o-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas_propietario h1{
+	font-family: impact;
+}
+/*!!!!!!!!!!!!!!!!!!sesion propietario responsive solucion1 768px*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+.contenedor .opciones_sesion .contenido_solucion .mensaje_propietario form p{
+	font-family: impact;
+	float: left;
+	margin:10px 0 20px 305px;
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_propietario form input , .contenedor .opciones_sesion .contenido_solucion .mensaje_propietario form select{
+	font-family: impact;
+	float: right;
+	width: 180px;
+	margin:10px 325px 20px 0;
+	background: rgba(61,61,63,1);
+	color: rgba(255,255,255,1);
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_propietario textarea{
+	color: rgba(255,255,255,1);
+	width: 1000px;
+	height: 150px;
+	margin: 0 0 0 12px;
+	background: rgba(61,61,63,1);
+}
+.contenedor .opciones_sesion .contenido_solucion .mensaje_propietario form input#boton_enviar_propietario{
+	width: 100px;
+	height: 25px;
+	border-radius: 15px;
+	background: rgba(168,198,69,1);
+	margin: 30px 0 0 420px; 
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas_propietario {
+	width: 1022px;
+	height: 100px;
+	margin: 200px 0 10px 0;
+	background: linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -moz-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+	background: -o-linear-gradient(rgba(255,255,255,1), rgba(180,180,180,1));
+}
+.contenedor .opciones_sesion .contenido_solucion3 .cuentas_propietario h1{
+	font-family: impact;
+}	
+}

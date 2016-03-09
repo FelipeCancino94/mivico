@@ -1,0 +1,158 @@
+form {
+	margin: 10px 0 10px 200px;
+}
+form p{
+	float: left;
+	font-family: impact;
+	margin-right: 10px;
+}
+form input{
+	background: rgba(0,147,178,1);
+	border-radius: 3px;
+	border-color: transparent;
+	margin-right: 10px;
+	color: rgba(255,255,255,1);
+}
+form input#boton{
+	background: rgba(168,198,69,1);
+	font-family: impact;
+	border-radius: 3px;
+	border-color: transparent;
+	color: rgba(0,0,0,1);
+}
+table{
+	border: 3px;
+	border-color: rgba(0,147,178,1);
+	width: 1000px;
+}
+table tr td{
+	font-family: impact;
+}
+table tr td.tit_que{
+	font-family: impact;
+	background: rgba(168,198,69,1);
+}
+table tr td a{
+	font-family: impact;
+	background: rgba(168,198,69,1);
+}
+input#ingreso_resp{
+	background: rgba(40,40,37,1);
+	width: 100%;
+	height: 100%;
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+}
+input#boton_respuesta{
+	font-family: 'impact';
+	background: rgba(0,147,178,1);
+	border-color: transparent;
+	height: 100%;
+	width: 100px;
+	margin-left: 100px;
+}
+#td_respuesta{
+	width: 800px;
+	margin: 100px 0 0 100px;
+}
+#td_respuesta p{
+	float: left;
+}
+#td_respuesta input{
+	float: left;
+	font-family: 'shruti';
+}
+#td_respuesta input#boton_respuesta{
+	float: left;
+	font-family: 'shruti';
+	margin-left: 140px;
+}
+#td_respuesta textarea{
+	resize:none;
+	width: 400px;
+	height: 100px;
+	background: rgba(40,40,37,1);
+	font-family: 'shruti';
+	color: rgba(255,255,255,1);
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!! responsive 768px estilos de buscador!!!!!!!!!*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+form {
+	margin: 10px 0 10px 200px;
+}
+form p{
+	float: left;
+	font-family: impact;
+	margin-right: 10px;
+}
+form input{
+	background: rgba(0,147,178,1);
+	border-radius: 3px;
+	border-color: transparent;
+	margin-right: 10px;
+	color: rgba(255,255,255,1);
+}
+form input#boton{
+	background: rgba(168,198,69,1);
+	font-family: impact;
+	border-radius: 3px;
+	border-color: transparent;
+	color: rgba(0,0,0,1);
+}
+table{
+	border: 3px;
+	border-color: rgba(0,147,178,1);
+	width: 768px;
+}
+table tr td{
+	font-family: impact;
+}
+table tr td.tit_que{
+	font-family: impact;
+	background: rgba(168,198,69,1);
+}
+table tr td a{
+	font-family: impact;
+	background: rgba(168,198,69,1);
+}
+input#ingreso_resp{
+	background: rgba(40,40,37,1);
+	
+	height: 100%;
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+
+}
+input#boton_respuesta{
+	font-family: 'impact';
+	background: rgba(0,147,178,1);
+	border-color: transparent;
+	height: 100%;
+	
+	margin-left: 100px;
+}
+#td_respuesta{
+	width: 800px;
+	margin: 100px 0 0 0;
+}
+#td_respuesta p{
+	float: left;
+}
+#td_respuesta input{
+	float: left;
+	font-family: 'shruti';
+}
+#td_respuesta input#boton_respuesta{
+	float: left;
+	font-family: 'shruti';
+	margin-left: 140px;
+}
+#td_respuesta textarea{
+	resize:none;
+	width: 400px;
+	height: 100px;
+	background: rgba(40,40,37,1);
+	font-family: 'shruti';
+	color: rgba(255,255,255,1);
+}	
+}

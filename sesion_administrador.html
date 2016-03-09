@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mivico</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos_sesiones.css">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!--inicio script de solucion-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#enlace_a").click(function(){
+				$(".cuadro_info").toggle();
+				$(".contenido_solucion").hide();
+				$(".contenido_solucion2").hide();
+				$(".contenido_solucion3").hide();
+				$(".contenido_solucion4").hide();
+				$(".contenido_solucion5").hide();
+			});
+			$("#solucion").click(function(){
+				$(".contenido_solucion").toggle();
+				$(".cuadro_info").hide();
+				$(".contenido_solucion2").hide();
+				$(".contenido_solucion3").hide();
+				$(".contenido_solucion4").hide();
+				$(".contenido_solucion5").hide();
+			});
+			$("#solucion2").click(function(){
+				$(".contenido_solucion5").hide();
+				$(".contenido_solucion4").hide();
+				$(".contenido_solucion3").hide();
+				$(".contenido_solucion2").toggle();
+				$(".contenido_solucion").hide();
+				$(".cuadro_info").hide();
+			});
+			$("#solucion3").click(function(){
+				$(".contenido_solucion5").hide();
+				$(".contenido_solucion4").hide();
+				$(".contenido_solucion3").toggle();
+				$(".contenido_solucion2").hide();
+				$(".contenido_solucion").hide();
+				$(".cuadro_info").hide();
+			});
+			$("#solucion4").click(function(){
+				$(".contenido_solucion5").hide();
+				$(".contenido_solucion4").toggle();
+				$(".contenido_solucion3").hide();
+				$(".contenido_solucion2").hide();
+				$(".contenido_solucion").hide();
+				$(".cuadro_info").hide();
+			});
+			$("#solucion5").click(function(){
+				$(".contenido_solucion5").toggle();
+				$(".contenido_solucion4").hide();
+				$(".contenido_solucion3").hide();
+				$(".contenido_solucion2").hide();
+				$(".contenido_solucion").hide();
+				$(".cuadro_info").hide();
+			});
+
+		});
+	</script>
+	<!--fin script de solucion-->
+</head>
+<body>
+	<header>
+		<div class="contenedor">
+			<div id="logo"></div>
+			<div id="menu_sesion">
+				<a href="#"><div id="notificaciones"></div></a>
+				<ul class="idiomas">
+					<li><a href="#">Inglés</a></li>
+					<li class="slash">/</li>
+					<li><a href="#">Español</a></li>
+				</ul>
+				<ul class="sesion">
+					<li id="enlace_a"><a href="#">EJEMPLO</a></li>	<!--en este li debe guardarse nombre de usuario-->				
+					<li class="slash">/</li>
+					<li><a href="index.html">Salir</a></li>
+				</ul>
+			</div>
+		<div class="separador"></div>	
+			<div class="opciones_sesion">
+				<a href="#"><div id="solucion"></div></a>
+				<!--acá va el contenido de la opcion de solucion-->
+				<div class="contenido_solucion">
+					<div class="peticion">
+						<div class="estado_peticion"></div>
+						<div class="linea_vertical"></div>
+						<p id="de"></p>
+						<div class="linea_vertical"></div>
+						<p id="item"></p>
+						<div class="linea_vertical"></div>
+						<p id="vivienda"></p>
+						<div class="linea_vertical"></div>
+						<p id="fecha_recibido"></p>
+					</div>
+					<div class="separador"></div>
+					<div class="linea_separacion"></div>
+					<div class="separador"></div>
+					<div class="mensaje_recibido"></div>
+					<div class="separador"></div>
+					<div class="mensaje_solucion">
+						<form action="####" method="post">
+							<input id="mensaje_respuesta" type="text" name="mensaje" placeholder="Respuesta....">
+							<div class="separador"></div>
+							<input id="boton_enviar" type="submit" name="enviar" value="enviar">
+						</form>
+					</div>
+					<div class="separador"></div>
+					<div class="franja_solucion"></div>
+				</div>
+				<!--fin del contenido de la opcion de solucion-->
+				<!--acá va el contenido de la opcion de solucion2-->
+				
+				<a href="#"><div id="solucion2"></div></a>
+				<div class="contenido_solucion2">	
+					<div class="contratos">
+						<div class="linea_vertical"></div>
+						<p id="empresa_nombre"></p>
+						<div class="linea_vertical"></div>
+						<p id="empresa_id"></p>
+						<div class="linea_vertical"></div>
+						<p id="fecha_inicio"></p>
+						<div class="linea_vertical"></div>
+						<p id="fecha_fin"></p>
+						<a href="#">Eliminar</a>
+						<div class="linea_vertical"></div>
+						<a href="#">Editar</a>
+						<div class="separador"></div>
+						<div id="boton_registrar"><a href="#">Registrar</a></div>					
+					</div>
+				<div class="separador"></div>
+				<div class="formulario_contrato">
+					<form action="contratos.php" method="post">
+						<p>Nombre de la empresa</p><input type="text" name="empresa" placeholder="empresa...">
+						<div class="separador"></div>
+						<p>Tipo de servicio</p><input type="text" name="tipo_empresa" placeholder="servicio...">
+						<div class="separador"></div>
+						<p>Fecha de inicio de contrato</p><input type="date" name="fecha_inicio">
+						<div class="separador"></div>
+						<p>Fecha de fin de contrato</p><input type="date" name="fecha_final">
+						<div class="separador"></div>
+						<input id="guardar_contrato" type="submit" name="guardar_contrato" value="Guardar">
+						<div class="separador"></div>
+					</form>
+				</div>
+				<div class="franja_solucion2"></div>
+				</div>
+				<!--fin del contenido de la opcion de solucion2-->
+				<!--acá va el contenido de la opcion de solucion3-->
+				<a href="#"><div id="solucion3"></div></a>
+				<div class="contenido_solucion3">
+					<div class="cuentas">
+						<div class="linea_vertical"></div>
+						<?php
+						$lista="SELECT * FROM cuentas";
+    					$resultado= mysql_query($lista);
+
+    					while ($dato= mysql_fetch_array($resultado)) {
+						echo "<p id='nombre_habitante'>"
+						echo "$lista[nombres]" ;
+
+						echo "</p>"
+						}
+						?>
+						<p id="nombre_habitante"></p>
+						<div class="linea_vertical"></div>
+						<p id="bloque_habitante"></p>
+						<div class="linea_vertical"></div>
+						<p id="apartamento_habitante"></p>
+						<div class="linea_vertical"></div>
+						<p id="estado_habitante"></p>
+						<div class="linea_vertical"></div>
+						<a href="#">Editar</a>
+						<div class="separador"></div>
+						<div id="boton_registrar"><a href="#">Registrar</a></div>					
+					</div>
+					<div class="separador"></div>
+				<div class="formulario_cuentas">
+					<form action="cuentas.php" method="post">
+						<p>Nombres</p><input type="text" name="nombres" placeholder="Nombres completos...">
+						<div class="separador"></div>
+						<p>bloque</p><input type="text" name="bloque" placeholder="Bloque...">
+						<div class="separador"></div>
+						<p>apartamento</p><input type="text" name="apartamento" placeholder="Apartamento...">
+						<div class="separador"></div>
+						<p>estado</p><input type="text" name="estado" placeholder="estado de cuenta...">
+						<div class="separador"></div>
+						<input id="guardar_cuenta" type="submit" name="guardar_cuenta" value="Guardar">
+						<div class="separador"></div>
+					</form>
+				</div>
+				<div class="franja_solucion2"></div>
+
+				</div>
+				<!--fin del contenido de la opcion de solucion3-->
+				<!--acá va el contenido de la opcion de solucion4-->
+				<a href="#"><div id="solucion4"></div></a>
+				<div class="contenido_solucion4">
+					<div class="difusion">
+						<div class="img_perfil_usuario"></div>
+						<textarea rows="4" cols="70" placeholder="   Realiza tu publicación aquí..."></textarea>
+					</div>
+					<div class="separador"></div>
+					<div class="publicaciones_anteriores">
+						<div class="img_perfil_usuario"></div>
+						<textarea rows="4" cols="70" ></textarea>
+
+					</div>
+				<a href="#">Ver más comentarios</a>
+
+				</div>
+				<!--fin del contenido de la opcion de solucion4-->
+				<!--acá va el contenido de la opcion de solucion5-->
+				<a href="#"><div id="solucion5"></div></a>
+				<div class="contenido_solucion5">
+					<div class="solicitud">
+						<div class="img_perfil_usuario"></div>
+						<textarea rows="4" cols="70"></textarea>
+					</div>
+					<div class="separador"></div>
+					<div class="ingreso_solicitud">
+						<div class="img_perfil_usuario" ></div>
+						<textarea rows="4" cols="70" placeholder="Mensaje de solicitud..."></textarea>
+						<div class="separador"></div>
+						<div id="boton_enviar_aprobacion"><a href="#">Enviar</a></div>	
+					</div>
+					<div class="separador"></div>
+					<div class="franja_solucion5"></div>
+				</div>
+				<!--fin del contenido de la opcion de solucion5-->
+			</div>
+			<div class="barra_azul"></div>
+		<div class="separador"></div>		
+		</div>
+	</header>
+	<div class="contenedor">
+		<section>
+			<article>
+				<div class="cuadro_info">
+					<div class="img_perfil"></div><!--acá va la imagen del perfil del usuario-->
+					<div class="info_usuario"><!--acá va la informacion del perfil del usuario-->
+						<p id="info1">EJEMPLO</p>
+						<p id="info2">EJEMPLO - EJEMPLO</p>
+						<p id="info3">EJEMPLO # EJEMPLO - EJEMPLO</p>
+						<p id="info4">EJEMPLO@ALGO.COM</p>
+						<p id="info5">(+57)1234567</p>
+					</div>
+					<div class="separador"></div>
+					<a id="actualizar" href="#">Actualizar</a>
+					<div class="separador"></div>
+					<div class="linea_cuadro_info"></div>
+				</div>
+				<div class="separador"></div>
+			</article>
+		</section>
+		<div class="separador"></div>
+	</div>	
+		<footer>
+		<div id="fondo_footer"></div>
+		<div class="contenedor">
+			<ul class="contactos_footer">		
+				<li><a href="#"><img src="img/face.png" width="18" heigth="18">Gated Community</a></li>
+				<li class="slash1">/</li>			
+				<li><a href="#"><img src="img/twit.png" width="18" height="18">@Gated-Community</a></li>
+				<li class="slash1">/</li>
+				<li><a href="#"><img src="img/phone.png" width="18" height="18">300-55555</a></li>
+				<li class="slash1">/</li>
+				<li><a href="#"><img src="img/mail.png" width="18" height="18">gatcom@gmail.com</a></li>
+			</ul>
+			<div class="separador"></div>
+			<p>2015 ©COPYRIGHT Gated Community TLD. Todos los derechos reservados</p>
+		</div>
+	</footer>
+
+	
+</body>
+</html>

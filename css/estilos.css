@@ -1,0 +1,716 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background: url(../img/fondo.jpg);
+	background-size: 30%;
+}
+@font-face{
+	font-family: shruti;
+	src: url(shruti.ttf);
+}
+@font-face{
+	font-family: impact;
+	src: url(Impact.ttf);
+}
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA PÁGINA INDEX.HTML(HOME)-----------------------*/
+.contenedor{
+	width: 1024px;
+	margin: 0 auto;
+}
+.contenedor #barra_menu{
+	display: none;
+}
+.contenedor #logo{
+	width: 150px;
+	height: 169px;
+	background-size: 100%;
+	background: url(../img/logo_mivico.png); 
+	float: left;
+}
+.contenedor #menu{
+	width: 874px;
+	height: 30px;
+	background: rgba(0,147,178,1);
+	float: left;
+	margin: 95px 0 0 0;
+}
+.contenedor #menu ul.idiomas{
+	margin: 2px 0 0 113px;
+	float: left;
+}
+.contenedor #menu ul.idiomas li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu ul.idiomas li a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 14pt;
+	font-family: 'impact';
+}
+.contenedor #menu ul.idiomas li a:hover{
+	text-decoration: overline;
+	font-size: 14pt;
+}
+.contenedor #menu ul.idiomas li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.contenedor #menu ul.sesion{
+	margin: 2px 80px 0 0;
+	float: right;
+}
+.contenedor #menu ul.sesion li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu ul.sesion li a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 14pt;
+	font-family: 'impact';
+}
+.contenedor #menu ul.sesion li a:hover{
+	text-decoration: overline;
+	font-size: 14pt;
+}
+.contenedor #menu ul.sesion li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.separador{
+	clear: both;
+}
+.contenedor .linea1{
+	background: rgba(168,198,69,1);
+	width: 100%;
+	height: 2px;
+	margin: 15px 0 15px 0;
+}
+.contenedor .linea2{
+	background: rgba(168,198,69,1);
+	width: 440px;
+	height: 2px;
+	margin: 0 auto;
+}
+.contenedor section article #spot{/*eliminar lineas 78-79 y 80 cuando ya esté el link del spot publicitario*/
+	/*background: rgba(100,100,100,1);*/
+	width: 1024px;
+	height: 477px;
+	margin: 0 0 15px 0;
+}
+section article .infografia img{
+	
+	width: 100%;
+	margin: 15px 0 0 0;
+}
+#fondo_footer{
+	background: rgba(43,40,49,1);
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	z-index: -1;
+}
+footer .contenedor ul.contactos_footer{
+	margin: 0 auto;
+	text-align: center;
+}
+footer .contenedor ul.contactos_footer li{
+	display: inline-block;
+	margin: 5px 15px 0 5px;
+}
+footer .contenedor ul.contactos_footer li a{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	font-family: 'shruti';
+}
+footer .contenedor ul.contactos_footer li a img{
+	margin: 0 10px 0 0;
+}
+footer .contenedor ul.contactos_footer li.slash1{
+	color: rgba(255,255,255,1);
+}
+footer .contenedor p{
+	color: rgba(255,255,255,1);
+	text-align: center;
+	margin: 8px 0 0 0;
+	font-family: 'shruti','impact';
+}
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA PÁGINA INDEX.HTML(HOME)-------RESPONSIVE DESIGN---768PX-------------*/
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+.contenedor{
+	width: 768px;
+	margin: 0 auto;
+}
+.contenedor #barra_menu{
+	display: none;
+}
+.contenedor #logo{
+	width: 115px;
+	height: 130px;
+	background: url(../img/logo_mivico_2.png); 
+	float: left;
+}
+.contenedor #menu{
+	width: 653px;
+	height: 40px;
+	background: rgba(0,147,178,1);
+	float: left;
+	margin: 56px 0 0 0;
+}
+.contenedor #menu ul.idiomas{
+	margin: 5px 0 0 100px;
+	float: left;
+}
+.contenedor #menu ul.idiomas li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu ul.idiomas li a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 13pt;
+}
+.contenedor #menu ul.idiomas li a:hover{
+	text-decoration: overline;
+	font-size: 13pt;
+}
+.contenedor #menu ul.idiomas li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.contenedor #menu ul.sesion{
+	margin: 5px 70px 0 0;
+	float: right;
+}
+.contenedor #menu ul.sesion li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu ul.sesion li a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 13pt;
+}
+.contenedor #menu ul.sesion li a:hover{
+	text-decoration: overline;
+	font-size: 13pt;
+}
+.contenedor #menu ul.sesion li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.separador{
+	clear: both;
+}
+.contenedor .linea1{
+	background: rgba(168,198,69,1);
+	width: 100%;
+	height: 2px;
+	margin: 15px 0 15px 0;
+}
+.contenedor .linea2{
+	background: rgba(168,198,69,1);
+	width: 440px;
+	height: 2px;
+	margin: 0 auto;
+}
+.contenedor section article #spot{/*eliminar lineas 190-191 y 192 cuando ya esté el link del spot publicitario*/
+	/*background: rgba(100,100,100,1);*/
+	width: 768px;
+	height: 432px;
+	margin: 0 0 15px 0;
+}
+.contenedor section article #spot iframe{
+	width: 768px;
+	height: 432px;
+}
+section article .infografia img{
+	
+	margin: 15px 0 0 0;
+	width: 100%;
+}
+#fondo_footer{
+	background: rgba(43,40,49,1);
+	width: 100%;
+	height: 56px;
+	position: absolute;
+	z-index: -1;
+}
+footer .contenedor ul.contactos_footer{
+	margin: 0 auto;
+	text-align: center;
+}
+footer .contenedor ul.contactos_footer li{
+	display: inline-block;
+	margin: 5px 15px 0 5px;
+}
+footer .contenedor ul.contactos_footer li a{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+}
+footer .contenedor ul.contactos_footer li a img{
+	margin: 0 5px 0 0;
+}
+footer .contenedor ul.contactos_footer li.slash1{
+	color: rgba(255,255,255,1);
+}
+footer .contenedor p{
+	color: rgba(255,255,255,1);
+	text-align: center;
+	margin: 8px 0 0 0;
+	font-family: 'shruti','impact';
+}
+}
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA PÁGINA INDEX.HTML(HOME)-------RESPONSIVE DESIGN---320PX-------------*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+.contenedor{
+	width: 320px;
+	margin: 0 auto;
+}
+.contenedor #barra_menu{
+	display: block;
+	background: url(../img/barras_menu_2.png);
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	background-size: 100%;
+	margin: 0;
+}
+.contenedor #barra_menu ul{
+	display: none;
+	width: 140px;
+	height: 80px;
+	margin: 40px 0 0 0;
+	background: rgba(43,40,49,0.9);
+	position: absolute;
+}
+.contenedor #barra_menu ul li{
+	margin: 5px 0 0 0;
+	list-style-type: none;
+}
+.contenedor #barra_menu ul li a{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	float: left;
+	margin: 0 20px 15px 10px;
+	font-family: 'impact';
+}
+.contenedor #logo{
+	width: 100px;
+	height: 28px;
+	background: url(../img/logo_mivico_3.png); 
+	position: absolute;
+	margin: 5px 0 0 60px;
+}
+.contenedor #menu{
+	width: 320px;
+	height: 40px;
+	background: rgba(0,147,178,1);
+	float: right;
+	margin: 0 0 0 0;
+}
+.contenedor #menu ul.idiomas{
+	margin: 5px 0 0 10px;
+	float: right;
+}
+.contenedor #menu ul.idiomas li{
+	display: inline-block;
+	margin: 0 5px 0 5px;
+}
+.contenedor #menu ul.idiomas li a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 12pt;
+}
+.contenedor #menu ul.idiomas li a:hover{
+	text-decoration: overline;
+	font-size: 12pt;
+}
+.contenedor #menu ul.idiomas li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.contenedor #menu ul.sesion{
+	margin: 5px 70px 0 0;
+	float: right;
+	display: none;
+}
+.contenedor #menu ul.sesion li{
+	display: inline-block;
+	margin: 0 10px 0 10px;
+}
+.contenedor #menu ul.sesion li a{
+	text-decoration: none;
+	color: rgba(247,247,245,1);
+	font-size: 12pt;
+}
+.contenedor #menu ul.sesion li a:hover{
+	text-decoration: overline;
+	font-size: 12pt;
+}
+.contenedor #menu ul.sesion li.slash{
+	text-decoration: none;
+	color: rgba(247,247,245,0.3);
+	font-size: 20px;
+}
+.separador{
+	clear: both;
+}
+.contenedor .linea1{
+	background: rgba(168,198,69,1);
+	width: 100%;
+	height: 2px;
+	margin: 15px 0 15px 0;
+}
+.contenedor .linea2{
+	background: rgba(168,198,69,1);
+	width: 100%;
+	height: 2px;
+	margin: 0 auto;
+}
+.contenedor section article #spot{/*eliminar lineas 336-337 y 338 cuando ya esté el link del spot publicitario*/
+	width: 320px;
+	height: 178px;
+	margin: 0 0 15px 0;
+}
+.contenedor section article #spot iframe{
+	width: 320px;
+	height: 178px;
+}
+section article .infografia img{
+	
+	margin: 15px 0 0 0;
+	width: 100%;
+}
+#fondo_footer{
+	background: rgba(43,40,49,1);
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	z-index: -1;
+}
+footer .contenedor ul.contactos_footer{
+	margin: 0 0 0 100px;
+	text-align: none;
+	float: left;
+	width: 150px;
+}
+footer .contenedor ul.contactos_footer li{
+	display: block;
+	margin: 5px 0 0 0;
+	float: left;
+}
+footer .contenedor ul.contactos_footer li a{
+	text-decoration: none;
+	color: rgba(255,255,255,1);
+	font-size: 7pt;
+	margin: 0;
+}
+footer .contenedor ul.contactos_footer li a img{
+	margin: 0 10px 0 5px;
+}
+footer .contenedor ul.contactos_footer li.slash1{
+	color: rgba(255,255,255,1);
+	margin: 0;
+	display: none;
+}
+footer .contenedor p{
+	color: rgba(255,255,255,1);
+	text-align: none;
+	margin: 8px 0 0 0;
+	font-size: 7pt;
+	font-family: 'shruti','impact';
+}
+}
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA seccion de registro-----------------------*/
+#fondo_pagina_2{
+	background: rgba(43,40,49,0.8);
+	width: 375px;
+	height: 360px;
+	position: absolute;
+	margin: 125px 0 0 649px;
+	display: none;
+}
+#fondo_pagina_2 .contenedor_registro{
+	width: 365px;
+	height: 100%;
+	margin: 0 auto;
+}
+#fondo_pagina_2 .contenedor_registro .linea_registro{
+	background: rgba(0,147,178,1);
+	height: 2px;
+	width: 365px;
+	margin: 20px 0 20px 0;
+}
+#fondo_pagina_2 .contenedor_registro form#registro p{
+	float: left;
+	color: rgba(255,255,255,1);
+	margin: 10px 0 0 0;
+	font-family: 'impact';
+}
+
+#fondo_pagina_2 .contenedor_registro form#registro input{
+	float: right;
+	width: 204px;
+	border-color: transparent;
+	margin: 10px 0 0 0;
+	border-width: 3px;
+	background: rgba(255,255,255,0.9);
+	color: rgba(0,0,0,1);
+	font-family: 'impact';
+}
+#fondo_pagina_2 .contenedor_registro form#registro input#boton_guardar{
+	float: right;
+	margin: 20px 140px 0 0;
+	width: 88px;
+	height: 33px;
+	color: rgba(255,255,255,1);
+	background: rgba(168,198,69,1);
+	border-color: transparent;
+}
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA seccion de registro-------RESPONSIVE DESIGN---768PX-------------*/
+@media only screen and (min-width: 768px) and (max-width: 960px){
+#fondo_pagina_2{
+	background: rgba(43,40,49,0.8);
+	width: 375px;
+	height: 360px;
+	position: absolute;
+	margin: 96px 0 0 393px;
+	display: none;
+}
+#fondo_pagina_2 .contenedor_registro{
+	width: 365px;
+	height: 100%;
+	margin: 0 auto;
+}
+#fondo_pagina_2 .contenedor_registro .linea_registro{
+	background: rgba(0,147,178,1);
+	height: 2px;
+	width: 350px;
+	margin: 20px 0 20px 12px;
+}
+#fondo_pagina_2 .contenedor_registro form#registro p{
+	float: left;
+	color: rgba(255,255,255,1);
+	margin: 10px 0 0 0;
+	font-family: 'impact';
+}
+
+#fondo_pagina_2 .contenedor_registro form#registro input{
+	float: right;
+	width: 204px;
+	border-color: transparent;
+	margin: 10px 0 0 0;
+	border-width: 3px;
+	background: rgba(255,255,255,0.9);
+	color: rgba(0,0,0,1);
+	font-family: 'impact';
+}
+#fondo_pagina_2 .contenedor_registro form#registro input#boton_guardar{
+	float: right;
+	margin: 20px 140px 0 0;
+	width: 88px;
+	height: 33px;
+	color: rgba(255,255,255,1);
+	background: rgba(168,198,69,1);
+	border-color: transparent;
+}
+
+}
+
+
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA seccion de registro-------RESPONSIVE DESIGN---320PX-------------*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+#fondo_pagina_2{
+	background: rgba(43,40,49,0.8);
+	width: 320px;
+	height: 380px;
+	position: absolute;
+	margin: 120px 0 0 0;
+	display: none;
+}
+#fondo_pagina_2 .contenedor_registro{
+	width: 320px;
+	height: 100%;
+	margin: 0 auto;
+}
+#fondo_pagina_2 .contenedor_registro .linea_registro{
+	background: rgba(0,147,178,1);
+	height: 2px;
+	width: 320px;
+	margin: 20px 0 20px 0;
+}
+#fondo_pagina_2 .contenedor_registro form#registro p{
+	float: left;
+	color: rgba(255,255,255,1);
+	margin: 10px 0 0 10px;
+}
+#fondo_pagina_2 .contenedor_registro form#registro input{
+	float: right;
+	width: 145px;
+	border-color: transparent;
+	margin: 10px 10px 0 0;
+	border-width: 3px;
+	background: rgba(255,255,255,0.9);
+	color: rgba(0,0,0,1);
+}
+#fondo_pagina_2 .contenedor_registro form#registro input#boton_guardar{
+	float: right;
+	width: 88px;
+	height: 33px;
+	background: rgba(168,198,69,1);
+	border-color: transparent;
+	margin-right: 115px;
+}
+
+}
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA seccion de icio de sesion-----------------------*/
+#fondo_pagina_1{
+	background: rgba(43,40,49,0.9);
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	margin: 125px 0 0 540px;
+	display: none;
+}
+#fondo_pagina_1 .contenedor_sesion{
+	width: 290px;
+	height: 100%;
+	margin: 0 auto;
+}
+#fondo_pagina_1 .contenedor_sesion .linea_sesion{
+	background: rgba(0,147,178,1);
+	height: 2px;
+	width: 290px;
+	margin: 20px 0 20px 0;
+}
+#fondo_pagina_1 .contenedor_sesion form#sesion p{
+	float: left;
+	color: rgba(255,255,255,1);
+	margin: 10px 0 0 0;
+	font-family: 'impact';
+}
+
+#fondo_pagina_1 .contenedor_sesion form#sesion input{
+	float: right;
+	width: 204px;
+	border-color: transparent;
+	margin: 10px 0 0 0;
+	border-width: 3px;
+	background: rgba(255,255,255,0.9);
+	color: rgba(255,255,255,1);
+	font-family: 'impact';
+}
+#fondo_pagina_1 .contenedor_sesion form#sesion input#boton_ingreso{
+	float: right;
+	width: 88px;
+	height: 33px;
+	background: rgba(168,198,69,1);
+	border-color: transparent;
+	margin: 20px 100px 0 0;
+}
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA seccion de icio de sesion-------RESPONSIVE DESIGN---768PX-------------*/
+@media only screen and (min-width: 768px) and (max-width: 960px){
+#fondo_pagina_1{
+	background: rgba(43,40,49,0.9);
+	width: 275px;
+	height: 200px;
+	position: absolute;
+	margin: 96px 0 0 330px;
+	display: none;
+}
+#fondo_pagina_1 .contenedor_sesion{
+	width: 265px;
+	height: 100%;
+	margin: 0 auto;
+}
+#fondo_pagina_1 .contenedor_sesion .linea_sesion{
+	background: rgba(0,147,178,1);
+	height: 2px;
+	width: 250px;
+	margin: 20px 0 20px 12px;
+}
+#fondo_pagina_1 .contenedor_sesion form#sesion p{
+	float: left;
+	color: rgba(255,255,255,1);
+	margin: 10px 0 0 0;
+	font-family: 'impact';
+}
+
+#fondo_pagina_1 .contenedor_sesion form#sesion input{
+	float: right;
+	width: 204px;
+	border-color: transparent;
+	margin: 10px 0 0 0;
+	border-width: 3px;
+	background: rgba(255,255,255,0.9);
+	color: rgba(255,255,255,1);
+	font-family: 'impact';
+}
+#fondo_pagina_1 .contenedor_sesion form#sesion input#boton_ingreso{
+	float: right;
+	width: 88px;
+	height: 33px;
+	background: rgba(168,198,69,1);
+	border-color: transparent;
+	margin: 20px 80px 0 0;
+}
+}
+/*--------------------------INICIO DE LAS PROPIEDADES DE LA seccion de icio de sesion-------RESPONSIVE DESIGN---320PX-------------*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+#fondo_pagina_1{
+	background: rgba(43,40,49,0.9);
+	width: 320px;
+	height: 200px;
+	position: absolute;
+	margin: 120px 0 0 0;
+	display: none;
+}
+#fondo_pagina_1 .contenedor_sesion{
+	width: 320px;
+	height: 100%;
+	margin: 0 auto;
+}
+#fondo_pagina_1 .contenedor_sesion .linea_sesion{
+	background: rgba(0,147,178,1);
+	height: 2px;
+	width: 320px;
+	margin: 20px 0 20px 0;
+}
+#fondo_pagina_1 .contenedor_sesion form#sesion p{
+	float: left;
+	color: rgba(255,255,255,1);
+	margin: 10px 0 0 10px;
+}
+#fondo_pagina_1 .contenedor_sesion form#sesion input{
+	float: right;
+	width: 145px;
+	border-color: transparent;
+	margin: 10px 10px 0 0;
+	border-width: 3px;
+	background: rgba(255,255,255,0.9);
+	color: rgba(0,0,0,1);
+}
+#fondo_pagina_1 .contenedor_sesion form#sesion input#boton_ingreso{
+	float: right;
+	width: 88px;
+	height: 33px;
+	background: rgba(168,198,69,1);
+	color: rgba(255,255,255,1);
+	border-color: transparent;
+	margin: 20px 115px 0 0;
+}
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
